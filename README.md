@@ -18,7 +18,7 @@ We as a group had to learn many new algorithms and libraries to assemble them in
 ## Accomplishments that we are proud of
 We are proud of tackling an issue that people have highlighted as a concern. We learned about how to publish packages using PyPI and gained experience in web development.
 
-## What I learned
+## What we learned
 As we are a team consisting mostly of beginner programmers, this was a great way to learn web development with Django in Python. We got to learn the difference between frontend and backend, how teams can collaborate on a coding project, and apply critical and creative thinking skills to solve a real-world problem.
 
 ## What's next for Sigmage
