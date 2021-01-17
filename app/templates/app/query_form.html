@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+{% load crispy_forms_filters %}
+
+{% block heading %}Set or Get Image Signature{% endblock %}
+
+{% block lead %}Please upload an image to get started.{% endblock %}
+
+{% block content %}
+
+    <form method="post" class="d-flex flex-column align-items-center" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ form|crispy }}
+
+        <input type="submit" class="btn btn-primary" value="Get started"/>
+    </form>
+
+{% endblock %}
