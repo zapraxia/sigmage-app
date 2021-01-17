@@ -11,7 +11,7 @@ cryptography==3.3.1
 daphne==3.0.1
 Django==3.1.5
 django-crispy-forms==1.10.0
-django-sos==0.0.1.dev0
+django-sos==0.0.1.dev2
 hyperlink==21.0.0
 idna==3.1
 incremental==17.5.0
@@ -24,7 +24,7 @@ PyHamcrest==2.0.2
 pyOpenSSL==20.0.1
 pytz==2020.5
 service-identity==18.1.0
-sigmage==0.0.1.dev0
+sigmage==0.0.1.dev1
 six==1.15.0
 sqlparse==0.4.1
 stegano==0.9.8

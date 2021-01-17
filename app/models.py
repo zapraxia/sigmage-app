@@ -1,25 +1,16 @@
-import os
+from django.db import models
 from uuid import uuid4
 
-from django.db import models
-from django.utils.deconstruct import deconstructible
-
 from sigmage import get_signature, set_signature
+from django_sos.utils import UploadHexTo
 
-
-@deconstructible
-class UploadToPathAndRename(object):
-    def __init__(self, path):
-        self.sub_path = path
-
-    def __call__(self, instance, filename):
-        ext = filename.split('.')[-1]
-
-        return os.path.join(self.sub_path, f'{uuid4().hex}.{ext}')
+from django.db.models import Model
 
 
 class Query(models.Model):
-    image = models.ImageField(upload_to=UploadToPathAndRename('images/'))
+    upload_to = 'images/'
+
+    image = models.ImageField(upload_to=UploadHexTo(upload_to))
 
     @property
     def signature(self):
@@ -27,8 +18,9 @@ class Query(models.Model):
 
     @signature.setter
     def signature(self, signature):
-
-        set_signature(self.image.path, self.image.path, signature)
+        prev_image_path = self.image.path
+        self.image.name = f'{self.upload_to}/{uuid4().hex}.png'
+        set_signature(prev_image_path, self.image.path, signature)
 
     class Meta:
         verbose_name_plural = 'queries'

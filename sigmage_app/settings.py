@@ -140,7 +140,7 @@ MEDIA_ROOT = BASE_DIR / 'mediafiles'
 
 # Crispy Forms
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'  # TODO Bootstrap 5
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 # SOS
 

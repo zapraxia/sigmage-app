@@ -9,8 +9,10 @@ class QueryUpdateForm(ModelForm):
     def save(self, commit=True):
         instance = super().save(commit)
 
+        instance.signature = self.cleaned_data['signature']
+
         if commit:
-            instance.signature = self.cleaned_data['signature']
+            instance.save()
 
         return instance
 
