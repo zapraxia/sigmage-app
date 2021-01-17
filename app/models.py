@@ -1,10 +1,9 @@
-from django.db import models
 from uuid import uuid4
 
-from sigmage import get_signature, set_signature
-from django_sos.utils import UploadHexTo
-
+from django.db import models
 from django.db.models import Model
+from django_sos.utils import UploadHexTo
+from sigmage import get_signature, set_signature
 
 
 class Query(models.Model):

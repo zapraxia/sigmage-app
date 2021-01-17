@@ -1,4 +1,4 @@
-from django.forms import ModelForm, CharField
+from django.forms import CharField, ModelForm
 
 from app.models import Query
 
