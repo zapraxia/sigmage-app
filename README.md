@@ -3,9 +3,10 @@
 ## Inspiration <br/>
 
 Many artists we know have complained that their work is being used without appropriate credit as other people claim to
-be the original creaters. Sigmage is a tool that ensures that images are signed, so that we can easily access the
-creater associated with each image. This addresses privacy concerns and allows original creaters of images to be more
-assertive of their own work<br/><br/>
+be the original creaters. Sigmage is a tool that sets or gets a signature inside an image, so that we can easily access the
+creater associated with each image. The signed image slightly alters the image data by encrypting a hidden signature using
+a state of the art steganography algorithms. This addresses privacy concerns and allows original creaters of images to be
+more assertive of their own work<br/><br/>
 
 ## What it does<br/>
 
@@ -22,7 +23,8 @@ The website was built using Django for backend, HTML/CSS/Javascript for frontend
 
 ## Challenges we ran into<br/>
 
-Having to deal with the guilt of making one member do all the work
+We as a group had to learn many new algorithms and library to assemble them into one coherent working project. The learning
+process took a significant amount of time and effort.
 <br/><br/>
 
 ## Accomplishments that we're proud of<br/>
@@ -40,4 +42,4 @@ apply critical and creative thinking skills to solve a real world problem.
 
 ## What's next for sigmage<br/>
 
-It's pretty much done. It is a simple project
+It's pretty much done. It is a simple project.
